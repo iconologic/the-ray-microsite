@@ -21,11 +21,28 @@
 </head>
 <body>
 
-  <div id="wrapper">
-    <!-- Include -->
+  <div id="wrapper" class="container no-padding">
+
     {% include "header" %}
-    <!-- Content block, child page inject content -->
-    {% block content %}{% endblock %}
+    {% include "about" %}
+  
+    <div class="divider">
+      <h1>Join The Movement</h1>
+      <div class="diagonal"></div>
+      <div class="clear"></div> 
+    </div>
+
+    {% include "details" %}  
+
+    <img src="{{ "road.jpg" | asset_url }}" class="img-responsive" alt="">
+
+    {% include "sponsors" %}
+
+    <img src="{{ "ray-anderson-wedge.jpg" | asset_url }}" class="img-responsive" alt="">
+
+    {% include "footer" %}
+
+
   </div>
 
   <!-- Vendor Scripts -->

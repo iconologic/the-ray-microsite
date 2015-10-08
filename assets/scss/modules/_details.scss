@@ -1,0 +1,19 @@
+section#details {
+	background: url('../images/section-bg-2.jpg') top center no-repeat;
+	background-size: cover;
+	padding: 0px 0 0 15px;
+	// height: 523px;
+
+	h1 { color: #666; }
+
+	.container-details {
+		
+		background: url('../images/bg-details.jpg') top center no-repeat;
+		background-size: cover;
+
+		p { 
+			font-size: 20px; 
+			padding: 50px;
+		}
+	}
+}
