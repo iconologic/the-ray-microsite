@@ -2,7 +2,16 @@
 	
 	<div class="container">
 		<img src="{{ "the-ray.png" | asset_url }}" class="img-responsive logo" alt="">
-		<img src="{{ "header-video.jpg" | asset_url }}" class="img-responsive" alt="">
+		<!-- <a href="#">
+			<img src="{{ "header-video.jpg" | asset_url }}" class="img-responsive" alt="">
+		</a> -->
+		<!-- 16:9 aspect ratio -->
+		<div class="video-wrapper">
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8"></iframe>
+			</div>
+		</div>
+
 	</div>
 
 </header>
