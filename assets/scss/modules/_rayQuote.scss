@@ -6,6 +6,15 @@
 .ra-wrapper{
   position: relative;
   width: 100%;
+  background-color: #000000;
+
+  .portrait{
+    position: relative;
+    top:0;
+    left:50%;
+    @include transform(translateX(-50%));
+    max-width: 500px;
+  }
 
   .ra-quote{
     position: relative;
@@ -28,6 +37,13 @@
 @include breakpoint(tablet) {
   .ra-wrapper{
 
+    .portrait{
+      left:0;
+      position: absolute;
+      @include transform(translateX(0));
+      max-width: 500px;
+    }
+
     .ra-quote{
       position: absolute;
       background-color: transparent;
@@ -49,6 +65,10 @@
 @include breakpoint(laptop) {
   .ra-wrapper{
 
+    .portrait{
+      max-width: 685px;
+    }
+
     .ra-quote{
 
     }
@@ -66,6 +86,10 @@
 @include breakpoint(desktop) {
 
   .ra-wrapper{
+
+    .portrait{
+      max-width: 800px;
+    }
 
     .ra-quote{
       position: absolute;
