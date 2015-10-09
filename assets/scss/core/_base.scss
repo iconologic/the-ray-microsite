@@ -3,7 +3,10 @@
 // ==========================================================================
 
 body, html { height: 100%; }
-body { background: #000;}
+body {
+  background: #000;
+  font-family: $font-family--primary;
+}
 
 header {
 	background: url('../images/header-bg.jpg') top center no-repeat;
@@ -35,9 +38,14 @@ section#about {
   height: 100px;
   background-color: #1fc9f9;
 
+  a{
+	display: block;
+	position: relative;
+	height: 100%;
+	width: 100%;
+  }
+
   .diagonal {
-	  border-bottom: 100px solid #fff;
-	  border-left: 252px solid rgba(0, 0, 0, 0);
 	  display: block;
 	  height: 0;
 	  width: 30%;
@@ -47,10 +55,15 @@ section#about {
 	h1 {
 		color: #fff;
 		position: absolute;
-		margin: 30px auto;
+		margin: 35px auto;
 		text-align: center;
 		left: 0;
 		right: 0;
+	  	font-size: 24px;
+	}
+
+  	i{
+	  padding-left: 15px;
 	}
 }
 
@@ -65,3 +78,40 @@ section#about {
 }
 
 section { background-color: #fff; }
+
+// Displays greater than 768px
+@include breakpoint(tablet) {
+
+  .divider {
+
+	.diagonal {
+	  border-bottom: 100px solid #fff;
+	  border-left: 252px solid rgba(0, 0, 0, 0);
+	}
+
+	h1 {
+	  margin: 35px auto;
+	  text-align: center;
+	  font-size: 28px;
+	}
+  }
+
+
+}
+
+// Displays greater than 992px
+@include breakpoint(laptop) {
+
+
+}
+
+// Displays greater than 1200px
+@include breakpoint(desktop) {
+
+
+}
+// Displays greater than 1600px
+@include breakpoint(desktopXL) {
+
+
+}

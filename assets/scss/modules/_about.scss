@@ -1,18 +1,82 @@
 section#about {
 	background: url('../images/section-bg.jpg') top center no-repeat;
 	background-size: cover;
-	padding: 30px 0 0 15px;
-	// height: 523px;
+  	padding: 30px 0 0;
 
-	h1 { color: #666; }
+	h1 {
+	  color: #666;
+	  font-size: 30px;
+	}
 
 	.container-about {
-		
+	  margin: 0 auto;
+	  	width: 100%;
 		background-color: rgba(217,217,217, 0.5);
 
 		p { 
-			font-size: 20px; 
-			padding: 50px;
+			font-size: 16px;
+		  	line-height: 24px;
+			padding: 30px;
+		  	margin: 0;
 		}
 	}
+}
+
+// Displays greater than 768px
+@include breakpoint(tablet) {
+
+  section#about {
+	
+	padding: 30px 0 0;
+
+	h1 {
+	  font-size: 36px;
+	}
+
+	.container-about {
+
+	  p {
+		font-size: 18px;
+		line-height: 26px;
+		padding: 50px;
+	  }
+	}
+  }
+
+  
+}
+
+// Displays greater than 992px
+@include breakpoint(laptop) {
+
+  section#about {
+	padding: 30px 15px 0;
+  }
+
+  .container-about {
+	max-width: 799px;
+
+	p {
+	  font-size: 20px;
+	  line-height: 28px;
+	  padding: 50px;
+	}
+
+  }
+
+}
+
+// Displays greater than 1200px
+@include breakpoint(desktop) {
+
+  .container-about {
+	max-width: 969px;
+  }
+
+
+}
+// Displays greater than 1600px
+@include breakpoint(desktopXL) {
+
+
 }

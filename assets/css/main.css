@@ -9,6 +9,7 @@ Version: 1.0.0
 
 *********************************************************/
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,300");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5870,6 +5871,7 @@ body, html {
 
 body {
   background: #000;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 header {
@@ -5895,9 +5897,13 @@ section#about h1 {
   height: 100px;
   background-color: #1fc9f9;
 }
+.divider a {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
 .divider .diagonal {
-  border-bottom: 100px solid #fff;
-  border-left: 252px solid transparent;
   display: block;
   height: 0;
   width: 30%;
@@ -5906,10 +5912,14 @@ section#about h1 {
 .divider h1 {
   color: #fff;
   position: absolute;
-  margin: 30px auto;
+  margin: 35px auto;
   text-align: center;
   left: 0;
   right: 0;
+  font-size: 24px;
+}
+.divider i {
+  padding-left: 15px;
 }
 
 .container-grey {
@@ -5925,6 +5935,17 @@ section {
   background-color: #fff;
 }
 
+@media (min-width: 768px) {
+  .divider .diagonal {
+    border-bottom: 100px solid #fff;
+    border-left: 252px solid transparent;
+  }
+  .divider h1 {
+    margin: 35px auto;
+    text-align: center;
+    font-size: 28px;
+  }
+}
 .text-hide {
   font: 0/0 a;
   color: transparent;
@@ -5944,19 +5965,56 @@ section {
 section#about {
   background: url("../images/section-bg.jpg") top center no-repeat;
   background-size: cover;
-  padding: 30px 0 0 15px;
+  padding: 30px 0 0;
 }
 section#about h1 {
   color: #666;
+  font-size: 30px;
 }
 section#about .container-about {
+  margin: 0 auto;
+  width: 100%;
   background-color: rgba(217, 217, 217, 0.5);
 }
 section#about .container-about p {
-  font-size: 20px;
-  padding: 50px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 30px;
+  margin: 0;
 }
 
+@media (min-width: 768px) {
+  section#about {
+    padding: 30px 0 0;
+  }
+  section#about h1 {
+    font-size: 36px;
+  }
+  section#about .container-about p {
+    font-size: 18px;
+    line-height: 26px;
+    padding: 50px;
+  }
+}
+@media (min-width: 992px) {
+  section#about {
+    padding: 30px 15px 0;
+  }
+
+  .container-about {
+    max-width: 799px;
+  }
+  .container-about p {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-about {
+    max-width: 969px;
+  }
+}
 section#details {
   background: url("../images/section-bg-2.jpg") top center no-repeat;
   background-size: cover;
@@ -5971,4 +6029,75 @@ section#details .container-details {
 section#details .container-details p {
   font-size: 20px;
   padding: 50px;
+}
+
+#sponsors img {
+  width: 100%;
+}
+
+#ray-anderson {
+  z-index: 100;
+  position: relative;
+}
+
+.ra-wrapper {
+  position: relative;
+  width: 100%;
+}
+.ra-wrapper .ra-quote {
+  position: relative;
+  background-color: #000000;
+  color: #fff;
+  width: 100%;
+  margin-left: 0;
+  padding: 1.5em;
+  text-align: center;
+}
+.ra-wrapper blockquote {
+  font-size: 15px;
+  line-height: 22px;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .ra-wrapper .ra-quote {
+    position: absolute;
+    background-color: transparent;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 55%;
+    margin-left: 45%;
+    text-align: left;
+  }
+  .ra-wrapper blockquote {
+    line-height: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .ra-wrapper blockquote {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .ra-wrapper .ra-quote {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 50%;
+    margin-left: 48%;
+    text-align: left;
+  }
+  .ra-wrapper blockquote {
+    font-size: 20px;
+  }
 }

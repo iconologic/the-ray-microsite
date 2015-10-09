@@ -4,8 +4,8 @@
 
 // Import if Google Fonts URL is defined
 
-@if variable-exists(font-url--cabin){
-  @import url($font-url--cabin);
+@if variable-exists(font-url--lato){
+  @import url($font-url--lato);
 }
 
 @if variable-exists(font-url--gentium){
