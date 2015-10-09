@@ -9,6 +9,7 @@ Version: 1.0.0
 
 *********************************************************/
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,300");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5870,6 +5871,7 @@ body, html {
 
 body {
   background: #000;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 header {
@@ -6033,9 +6035,26 @@ section#details .container-details p {
   width: 100%;
 }
 
+#ray-anderson {
+  z-index: 100;
+  position: relative;
+}
+
 .ra-wrapper {
   position: relative;
   width: 100%;
+  background-color: #000000;
+}
+.ra-wrapper .portrait {
+  position: relative;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  max-width: 500px;
 }
 .ra-wrapper .ra-quote {
   position: relative;
@@ -6053,6 +6072,16 @@ section#details .container-details p {
 }
 
 @media (min-width: 768px) {
+  .ra-wrapper .portrait {
+    left: 0;
+    position: absolute;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    max-width: 500px;
+  }
   .ra-wrapper .ra-quote {
     position: absolute;
     background-color: transparent;
@@ -6071,6 +6100,9 @@ section#details .container-details p {
   }
 }
 @media (min-width: 992px) {
+  .ra-wrapper .portrait {
+    max-width: 685px;
+  }
   .ra-wrapper blockquote {
     font-size: 20px;
     font-weight: 300;
@@ -6078,6 +6110,9 @@ section#details .container-details p {
   }
 }
 @media (min-width: 1200px) {
+  .ra-wrapper .portrait {
+    max-width: 800px;
+  }
   .ra-wrapper .ra-quote {
     position: absolute;
     top: 50%;
