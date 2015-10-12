@@ -1,8 +1,11 @@
 section#subscription-form {
 	background: #000;
 	width: 80%;
-	margin: 0 auto;
-	min-height: 800px;
+	margin: 50px auto;
+
+	.modal-backdrop.in { 
+		opacity: 0;
+	}
 
 	.container {
 		width: 100%;
