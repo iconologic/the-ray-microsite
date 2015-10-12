@@ -6072,6 +6072,10 @@ section#details .container-details p {
   width: 100%;
 }
 
+footer {
+  padding: 75px;
+}
+
 #ray-anderson {
   z-index: 100;
   position: relative;
@@ -6169,8 +6173,7 @@ section#details .container-details p {
 }
 section#subscription-form {
   background: #000;
-  width: 80%;
-  margin: 50px auto;
+  margin: 0 auto;
 }
 section#subscription-form .modal-backdrop.in {
   opacity: 0;
@@ -6189,8 +6192,17 @@ section#subscription-form .container p {
   margin: 0;
 }
 section#subscription-form .form {
+  width: 80%;
+  margin: 0 auto;
   background-color: #fff;
   padding: 50px;
+  max-width: 900px;
+}
+@media (min-height: 480px) {
+  section#subscription-form .form {
+    width: 100%;
+    padding: 30px;
+  }
 }
 section#subscription-form .form label, section#subscription-form .form .btn {
   font-size: 17px;
@@ -6208,4 +6220,10 @@ section#subscription-form .form .btn {
   border-radius: 0;
   background-color: #1fc9f9;
   color: #fff;
+}
+
+.modal.fade.in {
+  width: 100%;
+  height: auto;
+  padding-right: 0 !important;
 }

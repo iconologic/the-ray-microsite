@@ -1,7 +1,6 @@
 section#subscription-form {
 	background: #000;
-	width: 80%;
-	margin: 50px auto;
+	margin: 0 auto;
 
 	.modal-backdrop.in { 
 		opacity: 0;
@@ -23,8 +22,17 @@ section#subscription-form {
 	}
 
 	.form {
+		width: 80%;
+		margin: 0 auto;
 		background-color: #fff;
 		padding: 50px;
+		max-width: 900px;
+
+		@media (min-height: 480px) {
+			width: 100%;
+			padding: 30px;
+		}
+
 
 		label, .btn {
 			font-size: 17px;
@@ -46,4 +54,10 @@ section#subscription-form {
 			color: #fff;
 		}
 	}
+}
+
+.modal.fade.in {     
+	width: 100%;
+	height: auto;
+	padding-right: 0 !important;
 }

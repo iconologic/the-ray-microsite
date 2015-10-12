@@ -33,13 +33,14 @@
       <div class="clear"></div>
     </div>
 
-    {% include "form" %}
     {% include "sponsors" %}
     {% include "raQuote" %}
     {% include "footer" %}
 
 
   </div>
+  {% include "form" %}
+
 
   <!-- Vendor Scripts -->
   {{ "jquery.min.js" | asset_url | script_tag }}
