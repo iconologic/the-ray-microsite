@@ -1,0 +1,81 @@
+<section id="subscription-form">
+
+	<div class="container">
+		<img src="{{ "the-ray.png" | asset_url }}" class="img-responsive logo" alt="">
+		<p>Sign up here tojoin the movement, and to recieve updates on how we're changing the world from ground up.</p>
+	</div>
+	<!-- FORM -->
+	<div class="form lightbox-content">
+			
+		<!--NAME && LAST NAME-->
+		<div class="row">
+			<div class="col-md-6">
+				<form method="post">
+					<div class="form-group ">
+						<div class="row">
+							<div class="col-md-6">
+								<label class="control-label requiredField" for="name">
+								First Name
+								</label>
+							</div>
+							<div class="col-md-12">
+								<input class="form-control" id="name" name="name" type="text"/>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-6">
+				<form method="post">
+					<div class="form-group ">
+						<div class="row">
+							<div class="col-md-6">
+								<label class="control-label requiredField" for="lastname">
+								Last Name
+							</label>
+							</div>
+							<div class="col-md-12">
+								<input class="form-control" id="lastname" name="lastname" type="text"/>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<!--EMAIL && SUBMIT-->
+		<div class="row">
+		  <div class="col-md-12">
+		    <form method="post">
+		      <div class="form-group ">
+		        <div class="row">
+		          <div class="col-md-12">
+		            <label class="control-label requiredField" for="Email">
+		              Email
+		            </label>
+		          </div>
+		          <div class="col-md-12">
+		            <input class="form-control" id="email" name="email" type="text"/>
+		          </div>                
+		        </div>
+		      </div>
+		    </form>
+		  </div>
+			<div class="col-md-12">
+				<form method="post">
+					<div class="form-group ">
+						<div class="row">
+							<div class="col-md-12">
+								<button class="btn submit-btn " name="submit" type="submit">
+								SUBMIT
+								</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+
+</section>
