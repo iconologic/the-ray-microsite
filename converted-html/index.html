@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <!-- Title block allowing child pages to override -->
@@ -15,7 +15,7 @@
   
 
   <!-- Global Styles -->
-  <link href="assets/css/main.min.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="assets/css/main.min.css" rel="stylesheet" type="text/css" media="all" />
 
   <!-- Style block allowing child pages to inject their own styles -->
   
@@ -55,71 +55,42 @@
     </div>
 </section>
 
-    <div class="divider">
-      <a href="#">
-        <h1>Join The Movement<i class="fa fa-chevron-right"></i></h1>
-        <div class="diagonal"></div>
-        <div class="clear"></div>
-      </a>
+    <div id="mailingList" class="divider" data-toggle="modal" data-target="#subscription-form">
+      <h1>Join The Movement<i class="fa fa-chevron-right"></i></h1>
+      <div class="diagonal"></div>
+      <div class="clear"></div>
     </div>
-
-    <!-- <section id="details">
-	<div class="container col-sm-offset-1 no-padding">
-    <div class="container-details row col-sm-10">
-
-    	<p>From August to December 2014, a team of urban designers from Perkins+Will, under direction of Professor Richard Dagenhart, and eight graduate students from Georgia Tech's School of Architecture studied Ray Anderson's sustainability vision and engaged in a "deep dive" study of the highway corridor which extends from exits 2 to 18 on Interstate 85 in West Georgia.
-			<br><br>
-    	The design studio class members identified the characteristics of addressing pollution remediation, resource efficiency, wildlife conservation, life safety, cultural exchange and changing attitudes. They analyzed the existing conditions, both at a global scale and more locally within the Ray C. Anderson Memorial Highway.
-			
-			<div class="">
-    		<div class="col-sm-6">
-    			logo
-    		</div>
-    		<div class="col-sm-6">
-    			logo
-    		</div>
-    	</div>
-
-    	</p>
-
-    	
-    </div>
-  </div>
-</section>   -->
-
-    <img src="assets/images/road.jpg" class="img-responsive" alt="">
 
     <section id="sponsors">
   <div class="container col-md-offset-1 no-padding">
-    <div class="container-grey col-sm-12 col-md-10">
+    <div class=" col-sm-12 col-md-10">
 
     	<!-- Small Logo -->
       <div class="row">
       	<div class="col-sm-4">
-      		<img src="assets/images/logo/interface.png" class="img-responsive" alt="">
+          <img src="assets/images/logo/ray-foundation.png" class="img-responsive" alt="">
       	</div>
       	<div class="col-sm-4">
-      		<img src="assets/images/logo/ga-tech.png" class="img-responsive" alt="">
+          <img src="assets/images/logo/ga-conservancy.png" class="img-responsive" alt="">
       	</div>
       	<div class="col-sm-4">
-      		<img src="assets/images/logo/perkins-will.png" class="img-responsive" alt="">
+        <img src="assets/images/logo/ga-tech.png" class="img-responsive" alt="">
       	</div>
       </div>
 
       <!-- Large Logo -->
       <div class="row">
       	<div class="col-sm-6">
-      		<img src="assets/images/logo/ray-foundation.png" class="img-responsive" alt="">
+          <img src="assets/images/logo/perkins-will.png" class="img-responsive" alt="">
       	</div>
       	<div class="col-sm-6">
-      		<img src="assets/images/logo/ga-conservancy.png" class="img-responsive" alt="">
+      		<img src="assets/images/logo/interface.png" class="img-responsive" alt="">
       	</div>
       </div>
 
     </div>
   </div>
 </section>
-
     <section id="ray-anderson">
     <div class="container-fluid no-padding">
         <div class="col-sm-12 no-padding">
@@ -138,17 +109,99 @@
         </div>
     </div>
 </section>
-
     <footer>
-	<img src="assets/images/bg-footer.jpg" class="img-responsive" alt="">
+	<img src="assets/images/logo/the-ray.png" class="img-responsive logo" alt="">
 </footer>
 
 
   </div>
+  <section class="modal fade" id="subscription-form">
+
+	<div class="container">
+		<img src="assets/images/logo/the-ray.png" class="img-responsive logo" alt="">
+		<p>Sign up here tojoin the movement, and to recieve updates on how we're changing the world from ground up.</p>
+	</div>
+	<!-- FORM -->
+	<div class="form">
+			
+		<!--NAME && LAST NAME-->
+		<div class="row">
+			<div class="col-md-6">
+				<form method="post">
+					<div class="form-group ">
+						<div class="row">
+							<div class="col-md-6">
+								<label class="control-label requiredField" for="name">
+								First Name
+								</label>
+							</div>
+							<div class="col-md-12">
+								<input class="form-control" id="name" name="name" type="text"/>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-6">
+				<form method="post">
+					<div class="form-group ">
+						<div class="row">
+							<div class="col-md-6">
+								<label class="control-label requiredField" for="lastname">
+								Last Name
+							</label>
+							</div>
+							<div class="col-md-12">
+								<input class="form-control" id="lastname" name="lastname" type="text"/>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<!--EMAIL && SUBMIT-->
+		<div class="row">
+		  <div class="col-md-12">
+		    <form method="post">
+		      <div class="form-group ">
+		        <div class="row">
+		          <div class="col-md-12">
+		            <label class="control-label requiredField" for="Email">
+		              Email
+		            </label>
+		          </div>
+		          <div class="col-md-12">
+		            <input class="form-control" id="email" name="email" type="text"/>
+		          </div>                
+		        </div>
+		      </div>
+		    </form>
+		  </div>
+			<div class="col-md-12">
+				<form method="post">
+					<div class="form-group ">
+						<div class="row">
+							<div class="col-md-12">
+								<button class="btn submit-btn " name="submit" type="submit">
+								SUBMIT
+								</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+
+</section>
+
 
   <!-- Vendor Scripts -->
   <script src="assets/scripts/jquery.min.js"></script>
   <script src="assets/scripts/bootstrap.min.js"></script>
+  <script src="assets/scripts/main.min.js"></script>
 
   <!-- Script block allowing child pages to inject their own scripts -->
   

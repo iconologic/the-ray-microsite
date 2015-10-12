@@ -5887,7 +5887,8 @@ header img {
   width: 85%;
   margin: 0 auto;
 }
-header .logo {
+
+.logo {
   width: 350px;
   margin: 20px auto;
 }
@@ -5906,6 +5907,14 @@ section#about h1 {
   height: 100px;
   background-color: #1fc9f9;
 }
+.divider.hover {
+  background-color: #77a030;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
 .divider a {
   display: block;
   position: relative;
@@ -5917,6 +5926,15 @@ section#about h1 {
   height: 0;
   width: 30%;
   float: right;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.divider .diagonal.hover {
+  border-left: 0px solid transparent !important;
+  width: 0% !important;
 }
 .divider h1 {
   color: #fff;
@@ -5994,7 +6012,6 @@ section#about h1 {
 section#about .container-about {
   margin: 0 auto;
   width: 100%;
-  background-color: rgba(217, 217, 217, 0.5);
 }
 section#about .container-about p {
   font-size: 16px;
@@ -6055,6 +6072,10 @@ section#details .container-details p {
   width: 100%;
 }
 
+footer {
+  padding: 75px;
+}
+
 #ray-anderson {
   z-index: 100;
   position: relative;
@@ -6064,6 +6085,7 @@ section#details .container-details p {
   position: relative;
   width: 100%;
   background-color: #000000;
+  overflow: hidden;
 }
 .ra-wrapper .portrait {
   position: relative;
@@ -6148,4 +6170,60 @@ section#details .container-details p {
   .ra-wrapper blockquote {
     font-size: 20px;
   }
+}
+section#subscription-form {
+  background: #000;
+  margin: 0 auto;
+}
+section#subscription-form .modal-backdrop.in {
+  opacity: 0;
+}
+section#subscription-form .container {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+section#subscription-form .container p {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 30px;
+  margin: 0;
+}
+section#subscription-form .form {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 50px;
+  max-width: 900px;
+}
+@media (min-height: 480px) {
+  section#subscription-form .form {
+    width: 100%;
+    padding: 30px;
+  }
+}
+section#subscription-form .form label, section#subscription-form .form .btn {
+  font-size: 17px;
+}
+section#subscription-form .form .form-control {
+  height: 50px;
+  color: #000;
+  border: 1px solid #333;
+  border-radius: 0;
+}
+section#subscription-form .form .btn {
+  width: 100%;
+  height: auto;
+  padding: 40px;
+  border-radius: 0;
+  background-color: #1fc9f9;
+  color: #fff;
+}
+
+.modal.fade.in {
+  width: 100%;
+  height: auto;
+  padding-right: 0 !important;
 }
