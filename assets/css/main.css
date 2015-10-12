@@ -5906,6 +5906,14 @@ section#about h1 {
   height: 100px;
   background-color: #1fc9f9;
 }
+.divider.hover {
+  background-color: #77a030;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
 .divider a {
   display: block;
   position: relative;
@@ -5917,6 +5925,15 @@ section#about h1 {
   height: 0;
   width: 30%;
   float: right;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.divider .diagonal.hover {
+  border-left: 0px solid transparent !important;
+  width: 0% !important;
 }
 .divider h1 {
   color: #fff;
